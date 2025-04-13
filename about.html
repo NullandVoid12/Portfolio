@@ -1,0 +1,466 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Personal Portfolio</title>
+      <link rel="stylesheet" href="about.css">
+      <link rel="shortcut icon" href="https://i.postimg.cc/9fqYVvxh/logo.png" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Load GSAP library for the looping effect -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+           
+    <div class="main_header">
+        <header>
+          <div class="logo_container">
+            <img class="logo" src="img/logo_large.png" alt="Logo">
+            <p>Nathan De Jager</p>
+          </div>
+        
+        
+        
+          <!-- Desktop nav only visible on larger screens -->
+          <div class="navigation desktop-nav">
+            <nav>
+              <a href="index.html"><button class="nav_btn">Home</button></a>
+              <a href="login_signup.html"><button class="nav_btn">Login</button></a>
+              <a href="about.html"><button class="nav_btn">Portfolio</button></a>
+              <a href="about.html#contact"><button class="nav_btn">Contact</button></a>
+            </nav>
+          </div>
+
+          <div id="burger" class="mobile-burger">
+            <button id="burger-icon">&#9776;</button>
+          </div>
+
+          <div id="myNav" class="nav-overlay">
+            <a href="javascript:void(0)" class="closebtn" id="closebtn">&times;</a>
+          <div class="nav-overlay-content">
+            <a href="index.html"><button class="nav_btn">Home</button></a>
+            <a href="login_signup.html"><button class="nav_btn">Login</button></a>
+            <a href="about.html"><button class="nav_btn">Portfolio</button></a>
+            <a href="about.html#contact"><button class="nav_btn">Contact</button></a>
+          </div>
+        </div>
+      </div>
+        </header>
+        
+      <main>
+        
+          <aside class="sidebar " data-sidebar>
+              <div class="sidebar-info">
+                  <figure class="avatar-box">
+                      <img src="img/Profile/avatar.PNG" alt="avatar" width="80">
+                  </figure>
+  
+                  <div class="info-content">
+                      <h1 class="name" title="Nathan De Jager">Nathan De Jager</h1>
+                      <p class="title">Software Engineer</p>
+                  </div>
+  
+                  <button class="info-more-btn" data-sidebar-btn>
+                      <span>Show Contacts</span>
+                      <ion-icon name="chevron-down"></ion-icon>
+                  </button>
+              </div>
+  
+              <div class="sidebar-info-more">
+                  <div class="separator"></div>
+  
+                  <ul class="contacts-list">
+                      <li class="contact-item">
+                          <div class="icon-box">
+                              <ion-icon name="mail-outline"></ion-icon>
+                          </div>
+  
+                          <div class="contact-info">
+                              <p class="contact-title">Email</p>
+  
+                              <a href="nathan123dejager@gmail.com" class="contact-link">nathan123dejager@gmail.com</a>
+                          </div>
+                      </li>
+  
+                      <li class="contact-item">
+                          <div class="icon-box">
+                              <ion-icon name="phone-portrait-outline"></ion-icon>
+                          </div>
+  
+                          <div class="contact-info">
+                              <p class="contact-title">Phone</p>
+  
+                              <a href="tel:+27630537197" class="contact-link">+27 (063) 053-7197</a>
+                          </div>
+                      </li>
+  
+                      <li class="contact-item">
+                          <div class="icon-box">
+                              <ion-icon name="calendar-outline"></ion-icon>
+                          </div>
+  
+                          <div class="contact-info">
+                              <p class="contact-title">Birthday</p>
+  
+                              <time datetime="1982-06-23">12th August, 2002</time>
+                          </div>
+                      </li>
+  
+                      <li class="contact-item">
+                          <div class="icon-box">
+                              <ion-icon name="location-outline"></ion-icon>
+                          </div>
+  
+                          <div class="contact-info">
+                              <p class="contact-title">Location</p>
+  
+                              <address>Cape Town, Western Cape, South Africa</address>
+                          </div>
+                      </li>
+                  </ul>
+  
+                  <div class="separator"></div>
+  
+                  <ul class="social-list">
+                      <li class="social-item"><a href="https://www.linkedin.com/in/nathan-de-jager-34195b236/" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                  </ul>
+              </div>
+          </aside>
+  
+          <div class="main-content">
+              <nav class="navbar">
+                  <ul class="navbar-list">
+                      <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+                      <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+                      <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
+                      <li class="navbar-item"><button class="navbar-link" data-nav-link>Posts</button></li>
+                      <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+                  </ul>
+              </nav>
+  
+              <article class="about active" data-page="about">
+                  <header>
+                      <h2 class="h2 article-title">About me</h2>
+                  </header>
+  
+                  <section class="about-text">
+                    <p>I am a Software Engineer with a BS in Information Technology, honored as a Top Achiever and Golden Key graduate. My strengths lie in Python development, backend systems, and technical support across various platforms.</p>
+    <p>I’ve contributed to projects such as POS systems, online marketplaces, and user-friendly administrative portals. I hold a CompTIA A+ certification from a platinum CompTIA partner university and have hands-on experience with networking (including Cisco Packet Tracer), hardware troubleshooting, and Windows/Linux operating systems.</p>
+    <p>My role as Head Grader/Marker for East-Asian American students sharpened my ability to communicate complex technical concepts clearly and empathetically, which I now apply to real-world software and IT challenges.</p>      
+                </section>
+  
+                  <section class="service">
+                      <h3 class="h3 service-title">My Skill Sets</h3>
+  
+                      <ul class="service-list">
+                          <li class="service-item">
+                              <div class="service-icon-box">
+                                <i class="fa fa-server"></i>
+                              </div>
+  
+                              <div class="service-content-box">
+                                  <h4 class="h4 service-item-title">Front-end Development</h4>
+                                  <p class="service-item-text">The most modern and high-quality design made at a professional level.</p>
+                              </div>
+                          </li>
+  
+                          <li class="service-item">
+                              <div class="service-icon-box">
+                                <i class="fa fa-laptop"></i>
+                              </div>
+  
+                              <div class="service-content-box">
+                                  <h4 class="h4 service-item-title">Web development</h4>
+                                  <p class="service-item-text">High-quality development of sites at the professional level.</p>
+                              </div>
+                          </li>
+  
+                          <li class="service-item">
+                              <div class="service-icon-box">
+                                <i class="fab fa-android"></i>
+                              </div>
+  
+                              <div class="service-content-box">
+                                  <h4 class="h4 service-item-title">Mobile Apps</h4>
+                                  <p class="service-item-text">Professional development of applications for iOS and Android.</p>
+                              </div>
+                          </li>
+  
+                          <li class="service-item">
+                              <div class="service-icon-box">
+                                <i class="fa fa-code"></i>
+                              </div>
+  
+                              <div class="service-content-box">
+                                  <h4 class="h4 service-item-title">Back-End Development</h4>
+                                  <p class="service-item-text">I make high-quality photos of any category at a professional level.</p>
+                              </div>
+                          </li>
+                      </ul>
+                  </section>
+  
+  
+             
+  
+              </article>
+              
+              <article class="resume " data-page="resume">
+                  <header>
+                      <h2 class="h2 article-title">Resume</h2>
+                  </header>
+  
+                  <section class="timeline">
+                      <div class="title-wrapper">
+                          <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+  
+                          <h3 class="h3">Education</h3>
+                      </div>
+  
+                      <ol class="timeline-list">
+                          <li class="timeline-item">
+                              <h4 class="h4 timeline-item-title">Bachelor of Science in IT(Software Engineering)</h4>
+                              <span>2021 - 2024</span>
+                              <p class="timeline-text">Graduated from Eduvos with Golden Key honors and Top Achiever award. Core focus included Python, system architecture, and embedded development.</p>
+                          </li>
+  
+                          <li class="timeline-item">
+                              <h4 class="h4 timeline-item-title">International Cambridge A-Levels</h4>
+                              <span>2020 - 2021</span>
+                              <p class="timeline-text">Completed my International Cambridge A-Levels and recieved my certificate of completeion of secondary education through UNICSA(South Africa)</p>
+                          </li>
+  
+                      </ol>
+                  </section>
+  
+                  <section class="timeline">
+                      <div class="title-wrapper">
+                          <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+  
+                          <h3 class="h3">Experience</h3>
+                      </div>
+  
+                      <ol class="timeline-list">
+                          <li class="timeline-item">
+                              <h4 class="h4 timeline-item-title">Freelance Software Developer</h4>
+                              <span>2022 - Present</span>
+                              <p class="timeline-text">Assisted in building a custom online marketplace with a low-learning-curve admin panel. Developed backend systems and user interfaces that allowed staff to manage products without needing technical knowledge or training manuals.</p>
+                          </li>
+
+                          <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Android Developer</h4>
+                            <span>2023 - 2024</span>
+                            <p class="timeline-text">I had contractually completed a prototype android mobile application centered around event and facility booking and co-ordination. Handeled Front-end, Back-end, and server side development.</p>
+                        </li>
+  
+                          <li class="timeline-item">
+                              <h4 class="h4 timeline-item-title">Head Of Assessments</h4>
+                              <span>2021 - 2024</span>
+                              <p class="timeline-text">Managed academic assessments for 80+ East-Asian American students. Coordinated with team members to maintain consistency, clarity, and quality in all evaluations.</p>
+                          </li>
+  
+                      </ol>
+                  </section>
+  
+                  <section class="skill">
+                      <h3 class="h3 skills-title">My Skills</h3>
+  
+                      <ul class="skills-list content-card">
+                          <li class="skills-item">
+                              <div class="title-wrapper">
+                                  <h5 class="h5">Back-end Development</h5>
+                                  <data value="80">80%</data>
+                              </div>
+  
+                              <div class="skills-progress-bg">
+                                  <div class="skills-progress-fill" style="width: 80%;"></div>
+                              </div>
+                          </li>
+  
+                          <li class="skills-item">
+                              <div class="title-wrapper">
+                                  <h5 class="h5">UX/UI</h5>
+                                  <data value="70">70%</data>
+                              </div>
+  
+                              <div class="skills-progress-bg">
+                                  <div class="skills-progress-fill" style="width: 70%;"></div>
+                              </div>
+                          </li>
+  
+                          <li class="skills-item">
+                              <div class="title-wrapper">
+                                  <h5 class="h5">IT Technician</h5>
+                                  <data value="90">90%</data>
+                              </div>
+  
+                              <div class="skills-progress-bg">
+                                  <div class="skills-progress-fill" style="width: 90%;"></div>
+                              </div>
+
+                          </li>
+  
+                          <li class="skills-item">
+                              <div class="title-wrapper">
+                                  <h5 class="h5">Computer Hardware</h5>
+                                  <data value="80">80%</data>
+                              </div>
+  
+                              <div class="skills-progress-bg">
+                                  <div class="skills-progress-fill" style="width: 80%;"></div>
+                              </div>
+                          </li>
+
+                          <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Managerial</h5>
+                                <data value="70">70%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 70%;"></div>
+                            </div>
+                        </li>
+                      </ul>
+                  </section>
+              </article>
+  
+              <article class="portfolio " data-page="portfolio">
+                  <header>
+                      <h2 class="h2 article-title">Portfolio</h2>
+                  </header>
+  
+                  <section class="projects">
+                      <ul class="filter-list">
+                          <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+                          <li class="filter-item"><button data-filter-btn>Bussiness Solutions</button></li>
+                          <li class="filter-item"><button data-filter-btn>Applications</button></li>
+                          <li class="filter-item"><button data-filter-btn>Web Development</button></li>
+                      </ul>
+  
+                      <div class="filter-select-box">
+                          <button class="filter-select " data-select>
+                              <div class="select-value" data-select-value>Select Category</div>
+  
+                              <div class="select-icon">
+                                  <ion-icon name="chevron-down"></ion-icon>
+                              </div>
+                          </button>
+  
+                          <ul class="select-list">
+                              <li class="select-item"><button data-select-item>All</button></li>
+                              <li class="select-item"><button data-select-item>Web Design</button></li>
+                              <li class="select-item"><button data-select-item>Applications</button></li>
+                              <li class="select-item"><button data-select-item>Web Development</button></li>
+                          </ul>
+                      </div>
+  
+                      <ul class="project-list">
+                          <li class="project-item active" data-filter-item data-category="applications">
+                              <a href="#">
+                                  <figure class="project-img">
+                                      <div class="project-item-icon-box">
+                                          <ion-icon name="eye-outline"></ion-icon>
+                                      </div>
+  
+                                      <img src="https://i.postimg.cc/qRHpHMyd/project-1.jpg" alt="GSBA" loading="lazy">
+                                  </figure>
+  
+                                  <h3 class="project-title">GSBA</h3>
+                                  <p class="project-category">Booking Application</p>
+                              </a>
+                          </li>
+  
+                          <li class="project-item active" data-filter-item data-category="web development">
+                              <a href="#">
+                                  <figure class="project-img">
+                                      <div class="project-item-icon-box">
+                                          <ion-icon name="eye-outline"></ion-icon>
+                                      </div>
+  
+                                      <img src="https://i.postimg.cc/bNrcM2Wt/project-2.png" alt="AYSTS" loading="lazy">
+                                  </figure>
+  
+                                  <h3 class="project-title">AYSTS</h3>
+                                  <p class="project-category">E-Commerce Website</p>
+                              </a>
+                          </li>
+                      </ul>
+                  </section>
+              </article>
+  
+              <article class="posts " data-page="posts">
+                  <header>
+                      <h2 class="h2 article-title">Posts</h2>
+                  </header>
+  
+                  <section class="blog-posts">
+                      <ul class="blog-posts-list">
+                          <li class="blog-post-item">
+                              <a href="#">
+                                      <figure class="blog-banner-box">
+                                          <img src="https://i.postimg.cc/zBCBvP16/blog-6.jpg" alt="Design conferences in 2024" loading="lazy">
+                                      </figure>
+  
+                                  <div class="blog-content">
+                                      <div class="blog-meta">
+                                          <p class="blog-category">Database Securities</p>
+                                          <span class="dot"></span>
+                                          <time datetime="2024-02-23">Feb 23, 2024</time>
+                                      </div>
+  
+                                      <h3 class="h3 blog-item-title">Security research in 2024</h3>
+                                      <p class="blog-text">In 2024, several priciples of security vulrnabilities were identified and discussed.</p>
+                                  </div>
+                              </a>
+                          </li>
+                      </ul>
+                  </section>
+              </article>
+  
+              <article class="contact" data-page="contact">
+                  <header>
+                      <h2 class="h2 article-title">Contact</h2>
+                  </header>
+  
+                  <section class="mapbox" data-mapbox>
+                      <figure>
+                          <iframe src="https://www.google.com/maps/embed/v1/place?q=Cape+Town&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                           width="400" height="300" loading="lazy"></iframe>
+                      </figure>
+                  </section>
+  
+                  <section class="contact-form">
+                      <h3 class="h3 form-title">Contact Form</h3>
+  
+                      <form action="#" class="form" data-form>
+                          <div class="input-wrapper">
+                              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+                              <input type="email" name="email" class="form-input" placeholder="Email Address" required data-form-input>
+                          </div>
+  
+                          <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input=""></textarea>
+  
+                          <button class="form-btn" type="submit" disabled data-form-btn>
+                              <ion-icon name="paper-plane"></ion-icon>
+                              <span>Send Message</span>
+                          </button>
+                      </form>
+                  </section>
+              </article>
+          </div>
+      </main>
+
+  
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <footer>
+    <p>Copyright © 2024 by Nathan De Jager</p>
+    <!-- Main JavaScript file -->
+    <script src="about.js"></script>
+  </footer>
+</body>
+</html>

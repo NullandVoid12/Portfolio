@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Login/Signup</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="login_signup.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="main_header">
+    <header>
+      <div class="logo_container">
+        <img class="logo" src="img/logo_large.png" alt="Logo">
+        <p>Nathan De Jager</p>
+      </div>
+    
+      <!-- Burger only visible on mobile -->
+      <div class="mobile-burger">
+        <span onclick="openNav()">&#9776;</span>
+      </div>
+    
+      <!-- Desktop nav only visible on larger screens -->
+      <div class="navigation desktop-nav">
+        <nav>
+          <a href="index.html"><button class="nav_btn">Home</button></a>
+          <a href="login_signup.html"><button class="nav_btn">Login</button></a>
+          <a href="about.html"><button class="nav_btn">Portfolio</button></a>
+          <a href="about.html#contact"><button class="nav_btn">Contact</button></a>
+        </nav>
+      </div>
+    </header>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html"><button class="nav_btn">Home</button></a>
+          <a href="login_signup.html"><button class="nav_btn">Login</button></a>
+          <a href="about.html"><button class="nav_btn">Portfolio</button></a>
+          <a href="about.html#contact"><button class="nav_btn">Contact</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="row full-height justify-content-center">
+        <div class="col-12 text-center align-self-center py-5">
+          <div class="section pb-5 pt-5 pt-sm-2 text-center">
+            <h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
+            <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+            <label for="reg-log"></label>
+            <div class="card-3d-wrap mx-auto">
+              <div class="card-3d-wrapper">
+
+                <!-- Login Form -->
+                <div class="card-front">
+                  <div class="center-wrap">
+                    <div class="section text-center">
+                      <h4 class="mb-4 pb-3">Log In</h4>
+                      <form action="login_signup.php" method="POST">
+                        <div class="form-group">
+                          <input type="email" class="form-style" placeholder="Email" name="email" required>
+                          <i class="input-icon uil uil-at"></i>
+                        </div>  
+                        <div class="form-group mt-2">
+                          <input type="password" class="form-style" placeholder="Password" name="password" required>
+                          <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                        <input type="hidden" name="action" value="login">
+                        <button type="submit" class="btn mt-4">Login</button>
+                      </form>
+                      <p class="mb-0 mt-4 text-center"><a href="" class="link">Forgot your password?</a></p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Signup Form -->
+                <div class="card-back">
+                  <div class="center-wrap">
+                    <div class="section text-center">
+                      <h4 class="mb-3 pb-3">Sign Up</h4>
+                      <form action="login_signup.php" method="POST">
+                        <div class="form-group">
+                          <input type="text" class="form-style" placeholder="Full Name" name="full_name" required>
+                          <i class="input-icon uil uil-user"></i>
+                        </div>  
+                        <div class="form-group mt-2">
+                          <input type="tel" class="form-style" placeholder="Phone Number" name="phone_number" required>
+                          <i class="input-icon uil uil-phone"></i>
+                        </div>  
+                        <div class="form-group mt-2">
+                          <input type="email" class="form-style" placeholder="Email" name="email" required>
+                          <i class="input-icon uil uil-at"></i>
+                        </div>
+                        <div class="form-group mt-2">
+                          <input type="password" class="form-style" placeholder="Password" name="password" required>
+                          <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                        <input type="hidden" name="action" value="signup">
+                        <button type="submit" class="btn mt-4">Register</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>Copyright © 2024 by Nathan De Jager</p>
+    <script src="login_signup.js"></script>
+</footer>
+</body>
+</html>
