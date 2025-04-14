@@ -48,7 +48,8 @@
 				margin-bottom: ;
 			}
 			.typing-demo {
-				width: 8ch;
+				padding-top: 4vw;
+				width: 8.5ch;
 				animation: typing 2s steps(22), blink .5s step-end infinite alternate;
 				white-space: nowrap;
 				overflow: hidden;
@@ -59,6 +60,24 @@
 			.landing_text {
 				height: 80vh;
 			}
+			.logo {
+				width: 6vw;
+				height: 6vw;
+				margin-right: 10px;
+			}
+			.logo_container {
+				display: flex;
+				align-items: center;
+				padding-top: 16px;
+				padding-left: 6vw;
+			  }
+			
+			.logo_container p {
+				align-items: flex-start;
+				font-family: 'Exo 2', sans-serif;
+				color: white;
+				font-size: 2vw;
+			  }
 						}
 						}
 
@@ -234,10 +253,9 @@
 	  display: block;
 	  position: absolute;
 	  top: 20px;
-	  right: 20px;
+	  right: 25px;
 	  z-index: 1;
 	  color: #14a7cc;
-	  padding: 20px;
 	}
   
 	.overlay a {
