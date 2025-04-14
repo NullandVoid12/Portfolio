@@ -16,8 +16,51 @@
 				
 				max-width: 100vw;
   				overflow-x: hidden;
+				margin: auto;
+			body {
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center top;
+				background-color: #0c121f;
 			}
-		}
+			main {
+				margin: auto;
+				width: 100vw;
+				height: 100vh;
+			}
+			.typing_wrapper {
+				top: 35%;
+				margin-top: 24vw; /* Or 20vh, adjust as needed */
+				display: grid;
+				align-items: center;
+				align-items: top;
+				margin-left: 0vw;
+				margin-right: 2vw;
+			}
+			.intro {font-family: 'Exo 2', sans-serif;
+				margin-top: 0%;
+				height: 100vw;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				margin-left: 1vw;
+				margin-right: 2vw;
+				margin-bottom: ;
+			}
+			.typing-demo {
+				width: 8ch;
+				animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+				white-space: nowrap;
+				overflow: hidden;
+				border-right: 3px solid;
+				font-family: Exo 2, sans-serif;
+				font-size: 4vw;
+			}
+			.landing_text {
+				height: 80vh;
+			}
+						}
+						}
 
 
 
@@ -88,7 +131,7 @@
 		  }
 		  
 		  .main_page {
-			background-color: #22232e;
+			background-color: #0c121f;
 		  }
 		  
 		  .navigation button {
