@@ -3,7 +3,7 @@
 			background-image: url('img/Blue_eclipse_background.png');
 			background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: 150%;
             color: white; /* Text color is set to white for better visibility against the black background */
             font-family: Arial, sans-serif;
 			max-width: 100vw;
@@ -18,7 +18,7 @@
   				overflow-x: hidden;
 				margin: auto;
 			body {
-				background-size: contain;
+			
 				background-repeat: no-repeat;
 				background-position: center top;
 				background-color: #0c121f;
@@ -30,7 +30,7 @@
 			}
 			.typing_wrapper {
 				top: 35%;
-				margin-top: 24vw; /* Or 20vh, adjust as needed */
+				margin-top: 45vw; /* Or 20vh, adjust as needed */
 				display: grid;
 				align-items: center;
 				align-items: top;
