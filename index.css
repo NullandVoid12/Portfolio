@@ -1,1243 +1,208 @@
-
-body {
-	background-image: url('img/Blue_eclipse_background.png');
-	background-position: top;
-	background-repeat: no-repeat;
-	background-size: contain;
-	color: white; /* Text color is set to white for better visibility against the black background */
-	font-family: Arial, sans-serif;
-	max-width: 100vw;
-	  overflow-x: hidden;
-	
-}
-
-@media (max-width: 768px) {
-	html, body {
-		
-		max-width: 100%;
-		  overflow-x: hidden;
-		margin: auto;
-		background-size: 150%;
-	body {
-		width: auto;
-		background-repeat: no-repeat;
-		background-position: center top;
-		background-color: #0c121f;
-	}
-	main {
-		margin: auto;
-		width: 100%;
-		height: 100vh;
-	}
-	.typing_wrapper {
-		top: 35%;
-		margin-top: 50vw; /* Or 20vh, adjust as needed */
-		display: grid;
-		align-items: center;
-		align-items: top;
-		margin-left: 0vw;
-		margin-right: 2vw;
-	}
-	.intro {font-family: 'Exo 2', sans-serif;
-		margin-top: 0%;
-		height: 100vw;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-		margin-left: 1vw;
-		margin-right: 2vw;
-		
-	}
-	.typing-demo {
-		height: auto;
-		width: 8.5ch;
-		animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-		white-space: nowrap;
-		overflow: hidden;
-		border-right: 3px solid;
-		font-family: Exo 2, sans-serif;
-		font-size: 4vw;
-	}
-	.landing_text {
-		height: fit-content;
-		padding-bottom: 30vh;
-	}
-	.logo {
-		width: 6vw;
-		height: 6vw;
-		margin-right: 10px;
-	}
-	.logo_container {
-		display: flex;
-		align-items: center;
-		padding-top: 15px;
-		padding-left: 6vw;
-	  }
-	
-	.logo_container p {
-		align-items: flex-start;
-		font-family: 'Exo 2', sans-serif;
-		color: white;
-		font-size: 3vw;
-	  }
-
-	  .glow_card body {
-		min-height: 80vh;
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-		padding-top: 2rem;
-		padding-bottom: 2rem;
-		box-sizing: border-box;
-	  }
-	  
-	  .glow_card {
-	
-		background: #0c121f;
-		width: var(--card-width);
-		height: var(--card-height);
-		padding: 3px;
-		position: relative;
-		align-self: center;
-		margin: auto;
-		border-radius: 6px;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		display: flex;
-		font-size: 1.5em;
-		color: rgb(88 199 250 / 100%)cursor;
-		font-family: 'Exo 2', sans-serif;
-	  }
-	
-				}
-				}
-
-
-
-
-
-.logo {
-	width: 70px;
-	height: 70px;
-	margin-right: 10px;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan De Jager</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="main_page">
+       
+    
+    <div class="container">
+      <header>
+        <div class="logo_container">
+          <img class="logo" src="img/logo_large.png" alt="Logo">
+          <p>Nathan De Jager</p>
+        </div>
+      
+        <!-- Burger only visible on mobile -->
+        <div class="mobile-burger">
+          <span onclick="openNav()">&#9776;</span>
+        </div>
+      
+        <!-- Desktop nav only visible on larger screens -->
+        <div class="navigation desktop-nav">
+          <nav>
+            <a href="index.html"><button class="nav_btn">Home</button></a>
+            <a href="login_signup.html"><button class="nav_btn">Login</button></a>
+            <a href="about.html"><button class="nav_btn">Portfolio</button></a>
+            <a href="about.html#contact"><button class="nav_btn">Contact</button></a>
+          </nav>
+        </div>
+      </header>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="index.html"><button class="nav_btn">Home</button></a>
+            <a href="login_signup.html"><button class="nav_btn">Login</button></a>
+            <a href="about.html"><button class="nav_btn">Portfolio</button></a>
+            <a href="about.html#contact"><button class="nav_btn">Contact</button></a>
+        </div>
+      </div>
+        <main class="intro">
+          <div class="typing_wrapper">
+            <div class="typing-demo">
+              Innovation
+            </div>
+        </div>
+        </main>
+        <div class="landing_text">
+          <body>
   
-  .logo_container {
-	display: flex;
-	align-items: center;
-	padding-top: 16px;
-  }
-  
-  .logo_container p {
-	align-items: flex-start;
-	font-family: 'Exo 2', sans-serif;
-	color: white;
-  }
-  
-  .main_header header {
-	display: flex;   /* Enable flex for these elements */
-  
-	
-  }
-  
-  .nav_btn {
-	font-family: 'Exo 2', sans-serif;
-  }
-  
-  
-  .navigation {
-	font-family: 'Exo 2', sans-serif;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	position: absolute;
-	right: 3%;
-	top: 0;
-	height: 70px; /* match your logo height */
-	font-family: 'Exo 2', sans-serif;
-  }
-  
-  .main_header {
-	align-items: center;
-	width: auto
-  /* Or any other preferred width */
-	margin: 0 auto;   /* Center the container horizontally */
-	padding: 20px;   /* Add some padding for spacing */
-  }
-  
-  .navigation nav {
-	font-family: 'Exo 2', sans-serif;
-	padding-top: 40px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	gap: 10px;
-  }
-  
-  /* You might want to add some space between the logo and the navigation links */
-  .navigation nav a {
-	font-family: 'Exo 2', sans-serif;
-	margin: 0 3px;  /* Add some margin for spacing between links */
-  }
-  
-  .main_page {
-	background-color: #0c121f;
-  }
-  
-  .navigation button {
-	font-family: 'Exo 2', sans-serif;
-	width: fit-content;
-	position: relative;
-	overflow: hidden;
-	background: transparent;
-	padding: 15px 15px;
-	border-radius: 15px;
-	border: none;
-	font-size: 1rem;
-	color: #e0ffff;
-	font-weight: 500;
-	cursor: pointer;
-	z-index: 1;
-  }
-  .navigation button:active{
-	transform: scale(0.95);
-  }
-  .navigation button::before{
-	content: '';
-	position: absolute;
-	inset: -3px 50px;
-	background: #42455a;
-	transition: inset 350ms ease;
-	z-index: -2;
-	font-family: 'Exo 2', sans-serif;
-  }
-  .navigation button:hover::before{
-	inset: -20px 0px;
-	background: #00c2cb;
-	font-family: 'Exo 2', sans-serif;
-  }
-  .navigation button::after{
-	content: '';
-	position: absolute;
-	inset: 3px;
-	border-radius: 10px;
-	background: #22232e;
-	z-index: -1;
-  }
-
- /* Show/Hide based on screen size */
-.desktop-nav {
-display: flex;
-}
-
-.mobile-burger {
-display: none;
-}
-
-/* Fullscreen overlay menu */
-.overlay {
-height: 100%;
-width: 0;
-position: fixed;
-z-index: 1000;
-top: 0;
-left: 0;
-background-color: rgba(12, 23, 46, 0.90);
-overflow-x: hidden;
-transition: 0.5s;
-}
-
-.overlay-content {
-position: relative;
-top: 25%;
-width: 100%;
-text-align: center;
-}
-
-.overlay a {
-display: block;
-font-size: 36px;
-padding: 8px;
-color: #818181;
-text-decoration: none;
-transition: 0.3s;
-}
-
-.overlay a:hover {
-color: #f1f1f1;
-}
-
-.overlay .closebtn {
-position: absolute;
-top: 20px;
-right: 35px;
-font-size: 50px;
-}
-
-/* Responsive rules */
-@media (max-width: 768px) {
-.desktop-nav {
-display: none;
-}
-
-.mobile-burger {
-display: block;
-position: absolute;
-top: 20px;
-right: 25px;
-z-index: 1;
-color: #14a7cc;
-}
-
-.overlay a {
-font-size: 28px;
-}
-
-.overlay .closebtn {
-font-size: 40px;
-}
-}
-
-
-
-main {
-height: 100vh;
-}
-
-.landing_text {
-height: 130vh;
-}
-
-.typing_wrapper {
-margin-top: 50vh;
-/*This part is important for centering*/
-display: grid;
-place-items: center;
-}
-
-.typing-demo {
-width: 8.5ch;
-animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-white-space: nowrap;
-overflow: hidden;
-border-right: 3px solid;
-font-family: Exo 2, sans-serif;
-font-size: 3em;
-}
-
-@keyframes typing {
-from {
-width: 0
-}
-}
-
-@keyframes blink {
-50% {
-border-color: transparent
-}
-}
-
-.intro{
-font-family: 'Exo 2', sans-serif;
-margin-left: auto;
-margin-top: 75vh;
-align-items: center;
-justify-content: center;
-text-align: center;
-}
-
-.intro h2 p {
-justify-content: center;
-text-align: center;
-}
-video{
-width: 100%;
-}
-
-.background-video-container {
-position: relative;
-height: 100vh;  /* Adjust this as needed; using 100vh as an example for full screen */
-width: 100%;
-margin-left: 0px;
-margin-right: 0px;
-overflow: hidden;
-}
-
-.background-video-container::before {
-content: "";
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-z-index: 0; /* This will place the gradient above the video but below your other content. */
-background: linear-gradient(to bottom, rgb(12, 18, 31), rgba(12, 18, 31, 0.8) 10%, transparent 50%);
-background: linear-gradient(to top, rgb(12, 18, 31), rgba(12, 18, 31, 0.8) 10%, transparent 50%);
-}
-
-.background-video {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-object-fit: cover;  
-opacity: 1;      
-z-index: -1; 
-}
-
-
-.glass-overlay {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: rgba(0, 0, 0, 0.16);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(8.7px);
--webkit-backdrop-filter: blur(8.7px);
-background: linear-gradient(to bottom, rgb(12, 18, 31), rgba(12, 18, 31, 0.8) 30%, transparent 50%);
-}
-
-
-
-.content_main {
-position: relative; /* Ensures the content stays above the video */
-z-index: 1;
-}
-
-
-button {
-width: fit-content;
-position: relative;
-overflow: hidden;
-background: transparent;
-padding: 15px 15px;
-border-radius: 15px;
-border: none;
-font-size: 1rem;
-color: #e0ffff;
-font-weight: 500;
-cursor: pointer;
-z-index: 1;
-}
-button:active{
-transform: scale(0.95);
-}
-button::before{
-content: '';
-position: absolute;
-inset: -3px 50px;
-background: #42455a;
-transition: inset 350ms ease;
-z-index: -2;
-}
-button:hover::before{
-inset: -20px 0px;
-background: #00c2cb;
-}
-button::after{
-content: '';
-position: absolute;
-inset: 3px;
-border-radius: 10px;
-background: #22232e;
-z-index: -1;
-}
-
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
-
-:root {
-  --bg: #22232e;
-  --clr-1: #007ca1;
-  --clr-2: #2b2dbd;
-  --clr-3: #40d9ff;
-  --clr-4: #438b85;
-
-  --blur: 1rem;
-  --fs: clamp(2rem, 8vw, 5rem);
-  --ls: clamp(-1.75px, -0.25vw, -3.5px);
-}
-
-body {
-  background-color: var(--bg);
-  color: #fff;
-  font-family: "Inter", "DM Sans", Arial, sans-serif;
-}
-
-*,
-*::before,
-*::after {
-  font-family: inherit;
-  box-sizing: border-box;
-}
-
-.content {
-  text-align: center;
-}
-
-.changing_title {
-  font-size: var(--fs);
-  font-weight: 800;
-  letter-spacing: var(--ls);
-  position: relative;
-  overflow: hidden;
-  background: var(--bg);
-  margin: 0;
-}
-
-
-.aurora {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  mix-blend-mode: darken;
-  pointer-events: none;
-}
-
-.clr {
-  overflow: hidden;
-  position: absolute;
-  width: 60vw;
-  height: 60vw;
-  background-color: var(--clr-1);
-  border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
-  filter: blur(var(--blur));
-  mix-blend-mode: overlay;
-}
-
-.clr:nth-of-type(1) {
-  top: -50%;
-  animation: aurora-border 6s ease-in-out infinite,
-	aurora-1 12s ease-in-out infinite alternate;
-}
-
-.clr:nth-of-type(2) {
-  background-color: var(--clr-3);
-  right: 0;
-  top: 0;
-  animation: aurora-border 6s ease-in-out infinite,
-	aurora-2 12s ease-in-out infinite alternate;
-}
-
-.clr:nth-of-type(3) {
-  background-color: var(--clr-2);
-  left: 0;
-  bottom: 0;
-  animation: aurora-border 6s ease-in-out infinite,
-	aurora-3 8s ease-in-out infinite alternate;
-}
-
-.clr:nth-of-type(4) {
-  background-color: var(--clr-4);
-  right: 0;
-  bottom: -50%;
-  animation: aurora-border 6s ease-in-out infinite,
-	aurora-4 24s ease-in-out infinite alternate;
-}
-
-@keyframes aurora-1 {
-  0% {
-	top: 0;
-	right: 0;
-  }
-
-  50% {
-	top: 100%;
-	right: 75%;
-  }
-
-  75% {
-	top: 100%;
-	right: 25%;
-  }
-
-  100% {
-	top: 0;
-	right: 0;
-  }
-}
-
-@keyframes aurora-2 {
-  0% {
-	top: -50%;
-	left: 0%;
-  }
-
-  60% {
-	top: 100%;
-	left: 75%;
-  }
-
-  85% {
-	top: 100%;
-	left: 25%;
-  }
-
-  100% {
-	top: -50%;
-	left: 0%;
-  }
-}
-
-@keyframes aurora-3 {
-  0% {
-	bottom: 0;
-	left: 0;
-  }
-
-  40% {
-	bottom: 100%;
-	left: 75%;
-  }
-
-  65% {
-	bottom: 40%;
-	left: 50%;
-  }
-
-  100% {
-	bottom: 0;
-	left: 0;
-  }
-}
-
-@keyframes aurora-4 {
-  0% {
-	bottom: -50%;
-	right: 0;
-  }
-
-  50% {
-	bottom: 0%;
-	right: 40%;
-  }
-
-  90% {
-	bottom: 50%;
-	right: 25%;
-  }
-
-  100% {
-	bottom: -50%;
-	right: 0;
-  }
-}
-
-@keyframes aurora-border {
-  0% {
-	border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
-  }
-
-  25% {
-	border-radius: 47% 29% 39% 49% / 61% 19% 66% 26%;
-  }
-
-  50% {
-	border-radius: 57% 23% 47% 72% / 63% 17% 66% 33%;
-  }
-
-  75% {
-	border-radius: 28% 49% 29% 100% / 93% 20% 64% 25%;
-  }
-
-  100% {
-	border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
-  }
-}		
-
-
-.snip1561 {
-position: relative;
-overflow: hidden;
-margin: 10px;
-min-width: 230px;
-max-width: 315px;
-width: 100%;
-background: #700877;
-background: -moz-linear-gradient(90deg, #700877 0%, #27a9ff 100%, #2735ff 100%);
-background: -webkit-linear-gradient(90deg, #700877 0%, #27a9ff 100%, #2735ff 100%);
-background: linear-gradient(90deg, #700877 0%, #27a9ff 100%, #2735ff 100%);
-}
-
-.snip1561 img,
-.snip1561:before,
-.snip1561:after {
--webkit-box-sizing: border-box;
-box-sizing: border-box;
--webkit-transition: all 0.4s ease;
-transition: all 0.4s ease;
-}
-
-.snip1561 img {
-max-width: 100%;
-backface-visibility: hidden;
-vertical-align: top;
-}
-
-.snip1561:before,
-.snip1561:after {
-content: '';
-background-color: #fff;
-position: absolute;
-z-index: 1;
-top: 50%;
-left: 50%;
-opacity: 0;
--webkit-transform: translate(-50%, -50%);
-transform: translate(-50%, -50%);
-}
-
-.snip1561:before {
-width: 60px;
-height: 1px;
-left: 100%;
-}
-
-.snip1561:after {
-height: 60px;
-width: 1px;
-top: 0%;
-}
-
-.snip1561 a {
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-z-index: 1;
-}
-
-.snip1561:hover img,
-.snip1561.hover img {
-zoom: 1;
-filter: alpha(opacity=50);
--webkit-opacity: 0.5;
-opacity: 0.5;
-}
-
-.snip1561:hover:before,
-.snip1561.hover:before,
-.snip1561:hover:after,
-.snip1561.hover:after {
-opacity: 1;
-top: 50%;
-left: 50%;
-}
-
-
-
-.service_container{
-margin-top: 20vh;
-width: 100%;
-margin-left: auto;
-margin-right: auto;   /* These will center the service_container horizontally */
-position: relative;
-display: flex;
-justify-content: center; /* Changed from space-between to center */
-flex-wrap: wrap;
-text-align: center;
-}
-
-.service_container .service_card{
-position: relative;
-padding: 10px;
-font-family: 'Exo 2', sans-serif;
-}
-
-.service_container .service_card .face{
-width:300px;
-height: 200px;
-transition:.4s;
-
-}
-
-.service_container .service_card .face.face1{
-position: relative;
-background: #0c121f;
-display: flex;
-justify-content: center;
-align-content:center;
-align-items: center;
-z-index: 1;
-transform: translateY(100px);
-}
-
-.service_container .service_card:hover .face.face1{
-transform: translateY(0);
-box-shadow:
-inset 0 0 60px rgba(45, 206, 255, 0.603),
-inset 20px 0 80px rgb(14, 64, 202),
-inset -20px 0 80px rgb(0, 45, 168),
-inset 20px 0 300px rgb(0, 45, 168),
-inset -20px 0 300px rgb(6, 9, 44),
-0 0 50px #ffffffb7,
--10px 0 80px rgb(0, 3, 165),
-10px 0 80px rgb(6, 9, 44);
-
-}
-
-
-.service_container .service_card .face.face1 .service_content{
-opacity: .2;
-transition:  0.5s;
-text-align: center;
-
-
-
-}
-
-.service_container .service_card:hover .face.face1 .service_content{
-opacity: 1;
-
-}
-
-.service_container .service_card .face.face1 .service_content i{
-font-size: 3em;
-color: white;
-display: inline-block;
-
-}
-
-.service_container .service_card .face.face1 .service_content h3{
-font-size: 1em;
-color: white;
-text-align: center;
-
-
-}
-
-.service_container .service_card .face.face1 .service_content a{
-transition: .5s;
-}
-
-.service_container .service_card .face.face2{
-position: relative;
-background: rgb(99, 115, 129);
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 20px;
-box-sizing: border-box;
-box-shadow: 0 20px 50px rgba(0,0,0,.8);
-transform: translateY(-100px);
-}
-
-.service_container .service_card:hover .face.face2{
-transform: translateY(0);
-
-
-}
-
-.service_container .service_card .face.face2 .service_content p, a{
-font-size: 10pt;
-margin: 0 ;
-padding: 0;
-color:#0c121f;
-}
-
-.service_container .service_card .face.face2 .service_content a{
-text-decoration:none;
-color: black;
-box-sizing: border-box;
-outline : 1px dashed #0c121f;
-padding: 10px;
-margin: 15px 0 0;
-display: inline-block;
-}
-
-.service_container .service_card .face.face2 .service_content a:hover{
-background: #0c121f ;
-color: whitesmoke; 
-box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
-}
-
-.myElement:hover {
-/* other hover styles can be placed here if needed */
-}
-.myElement:hover.fancy_shadow {
-box-shadow:
-inset 0 0 60px whitesmoke,
-inset 20px 0 80px #0ff,
-inset -20px 0 80px #0ff,
-inset 20px 0 300px rgb(0, 68, 255),
-inset -20px 0 300px rgb(78, 0, 167),
-0 0 50px #fff,
--10px 0 80px rgb(47, 0, 255),
-10px 0 80px rgb(132, 0, 255);
-}
-
-@media (max-width: 768px) {
-
-
-.background-video-container {
-position: relative;
-width: 100vw;
-height: auto;
-overflow: hidden;
-}
-
-.background-video-container {
-position: relative;
-width: 100%;
-overflow: hidden;
-min-height: 100vh; /* Makes sure it’s at least full height but can grow */
-}
-
-.service_container .service_card .face{
-width:300px;
-height: 200px;
-transition:.4s;
-
-}
-
-
-}
-
-.links_container {
-height: 50vh;
-}
-.links_container body {
-margin: 0;
-padding: 0;
-background: #262626;
-word-wrap: break-word;
-overflow-wrap: break-word;
-word-break: break-all;
-white-space: normal;
-}
-
-.links_container ul {
-margin-top: 150px;
-padding: 0;
-display: flex;
-position: absolute;
-left: 50%;
-transform: translate(-50%, -50%);
-}
-
-.links_container ul li {
-list-style: none;
-margin: 0 15px;
-}
-
-.links_container ul li a {
-position: relative; 
-display: block;
-width: 60px;
-height: 60px;
-text-align: center;
-line-height: 63px;
-background: #0c121f;
-border-radius: 50%;
-font-size: 30px;
-color: #666;
-transition: .5s;
-}
-
-.links_container ul li a::before {
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-border-radius: 50%;
-background: #0c121f;
-transition: .5s;
-transform: scale(.9);
-z-index: -1;
-}
-
-.links_container ul li a:hover::before {
-transform: scale(1.1);
-box-shadow: 0 0 15px #0096fa;
-}
-
-.links_container ul li a:hover {
-color: #0096fa;
-box-shadow: 0 0 5px #0096fa;
-text-shadow: 0 0 5px #0096fa;
-}
-
-@property --rotate {
-syntax: "<angle>";
-initial-value: 132deg;
-inherits: false;
-}
-
-:root {
---card-height: 65vh;
---card-width: 80%;
-}
-
-.glow_card body {
-min-height: 100vh;
-display: flex;
-align-items: center;
-flex-direction: column;
-padding-top: 2rem;
-padding-bottom: 2rem;
-box-sizing: border-box;
-}
-
-.glow_card {
-margin: 30vh auto 0 auto;
-background: #0c121f;
-width: var(--card-width);
-height: var(--card-height);
-padding: 3px;
-position: relative;
-align-self: center;
-border-radius: 6px;
-justify-content: center;
-align-items: center;
-text-align: center;
-display: flex;
-font-size: 1.5em;
-color: rgb(88 199 250 / 100%)
-cursor;
-font-family: 'Exo 2', sans-serif;
-}
-
-
-.glow_card:hover {
-color: rgb(33, 173, 238);
-transition: color 1s;
-}
-
-.glow_card::before, .glow_card::after {
-transition: opacity 0.7s ease; /* Fade-in transition effect */
-opacity: 0;  /* Set initial opacity to 0 */
-}
-
-.glow_card:hover::before, .glow_card:hover::after {
-animation: spin 2.5s linear infinite;
-opacity: 1;  /* Set opacity to 1 on hover */
-}
-
-.glow_card::before {
-content: "";
-width: 101%;
-height: 101%;
-border-radius: 8px;
-background-image: linear-gradient(
-var(--rotate)
-, #5ddcff, #3c67e3 43%, #4e00c2);
-position: absolute;
-z-index: -1;
-top: -2px;
-left: -2px;
-right: -2px;
-}
-
-.glow_card::after {
-position: absolute;
-content: "";
-top: calc(var(--card-height) / 6);
-left: 0;
-right: 0;
-z-index: -1;
-height: 100%;
-width: 100%;
-margin: 0 auto;
-transform: scale(0.8);
-filter: blur(calc(var(--card-height) / 6));
-background-image: linear-gradient(
-var(--rotate)
-, #5ddcff, #3c67e3 43%, #4e00c2);
-}
-
-@keyframes spin {
-0% {
---rotate: 0deg;
-}
-100% {
---rotate: 360deg;
-}
-}
-
-.glow_card a {
-color: #212534;
-text-decoration: none;
-font-family: sans-serif;
-font-weight: bold;
-margin-top: 2rem;
-}
-
-.why_us_main {
-display: flex;
-justify-content: space-between;
-align-items: center;
-max-width: 1200px;
-gap: 24px;
-margin: auto;
-padding-top: 50vh;
-}
-
-.left-stack, .right-stack {
-display: flex;
-flex-direction: column;
-gap: 24px; /* Adjust if needed */
-}
-
-.f1, .f2, .f3, .f4, .f5 {
-display: flex;          /* Set the display property to flex */
-flex-direction: column; /* Stack children vertically */
-justify-content: center;/* Center children vertically */
-align-items: center;    /* Center children horizontally */
-}
-
-.f1 {
-width: 384px;
-height: 266px;
-flex-shrink: 0;
-background-image: url("img/Frames/f1.png");
-}
-
-.f2 {
-width: 385px;
-height: 202px;
-flex-shrink: 0;
-background-image: url("img/Frames/f2.png");
-}
-
-.f3 {
-width: 384px;
-height: 276px;
-flex-shrink: 0;
-background-image: url("img/Frames/f3.png");
-}
-
-.f4 {
-width: 384px;
-height: 337px;
-flex-shrink: 0;
-background-image: url("img/Frames/f4.png");
-}
-
-.f5 {
-width: 384px;
-height: 572px;
-flex-shrink: 0;
-background-image: url("img/Frames/f5.png");
-}
-
-.why_us_main  h1, h2 {
-color: #e0ffff;
-font-family: 'Exo 2', sans-serif;
-margin: 10px 0;
-text-align: center;
-/* Ensuring the titles are centered */
-}
-
-.why_us_main p {
-color: #a8a8b1;
-font-size: 1rem;
-margin: 10px;
-text-align: center; /* Ensuring the paragraphs are centered */
-
-}
-
-@media (max-width: 768px) {
-.why_us_main {
-flex-direction: column;
-align-items: center;
-padding-top: 5vh; /* reduce padding for mobile */
-}
-
-.left-stack,
-.right-stack {
-width: 100%;
-align-items: center;
-}
-
-.f1, .f2, .f3, .f4, .f5 {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
-width: 90vw;                 /* Width is proportional to screen */
-max-width: 384px;            /* Prevent it from stretching too far on large screens */
-
-background-size: 100% auto;  /* Scale image to fit width, height adjusts automatically */
-background-repeat: no-repeat;
-background-position: center top;
-
-text-align: center;
-padding: 20px;
-}}
-
-.contact-form-container {
-display: flex;
-justify-content: space-between;
-max-width: 800px;
-margin: 50px auto;
-margin-top: 40vh;
-}
-
-.get-in-touch, .contact-details {
-text-overflow: clip;
-width: 45%;
-padding: 20px;
-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-border-radius: 4px;
-font-family: 'Exo 2', sans-serif;
-}
-
-.get-in-touch {
-background-color: #f5f5f500;
-}
-
-.input-field {
-width: 100%;
-padding: 10px;
-background-color: #ffffff2c;
-margin-bottom: 10px;
-border: 1px solid #cccccc98;
-border-radius: 4px;
-box-sizing: border-box;
-outline: none;
-color: #eeeeee;
-font-family: 'Exo 2', sans-serif;
-}
-
-.textarea {
-height: 100px;
-resize: none;
-}
-
-.get-in-touch button {
-background-color: #0099ff;
-color: white;
-padding: 10px 15px;
-border: none;
-border-radius: 4px;
-cursor: pointer;
-}
-
-.contact-details {
-background-color:#212534;
-color: white;
-padding: auto;
-word-wrap: break-word;
-overflow-wrap: break-word;
-word-break: break-all;
-white-space: normal;
-}
-
-.icon {
-margin-right: 10px;
-}
-
-.contact-details p {
-padding: 16px;
-}
+            <div class="glow_card">
+              <article class="article" >
+                <header class="title">
+                    <h1>Personalised Software Development</h1>
+                    <p>with Nathan De Jager</p>
+                </header>
+          
+            </article>
+            </div>
+            
+            <a  target="_blank"></a>
+          </body>
+        </div>
+        <div class="background-video-container">
+            <video autoplay loop muted playsinline class="background-video">
+                <source src="mp4/new.mp4" type="video/mp4">
+            </video>
+            <div class="color-overlay"></div> 
+            <div class="glass-overlay"></div>
+            <body>
+                <script src="https://kit.fontawesome.com/95a02bd20d.js"></script>
+           
+             <div class="service_container">
+                <div class="service_card">
+                  <div class="face face1">
+                    <div class="service_content">
+                       <i class="fab fa-html5"></i>            
+                      <h3>Web Dev</h3>
+                    </div>
+                  </div>
+                  <div class="face face2">
+                    <div class="service_content">
+                      <p>Specialized in building full-stack websites—from sleek UI/UX design to secure backends. Projects include online marketplaces and visually refined responsive sites, tailored to elevate your digital presence.</p>
+                      <a href="about.html#contact" type="button">Get In Touch</a>
+                    </div>
+                  </div>
+               </div>
+               
+               <div class="service_card">
+                  <div class="face face1">
+                    <div class="service_content">
+                 <i class="fab fa-android"></i>               
+                    <h3>App Dev</h3>
+                    </div>
+                  </div>
+                  <div class="face face2">
+                    <div class="service_content">
+                      <p>Designed and contributed to mobile-first applications with strong UI, seamless user flows, and reliable functionality. Ideal for businesses needing high-performance mobile interfaces or hybrid apps.</p>
+                      <a href="about.html#contact" type="button">Get In Touch</a>
+                    </div>
+                  </div>
+               </div>
+               
+               
+               <div class="service_card">
+                  <div class="face face1">
+                    <div class="service_content">
+                      <i class="fas fa-code"></i>
+                       <h3>Enterprise</h3>
+                    </div>
+                  </div>
+                  <div class="face face2">
+                    <div class="service_content">
+                      <p>Worked on custom software systems such as POS solutions and backend tools that enhance business efficiency. Built with scalability, maintainability, and integration at the core using Python and modern frameworks.</p>
+                      <a href="about.html#contact" type="button">Get In Touch</a>
+                    </div>
+                  </div>
+               </div>
+             </div>
+           </body>
+        </div>
+    </div>
+    <div class="why_us_main">
+      <div class="left-stack">
+          <div class="f1" id="about">
+              <h2>Innovation</h2>
+              <p>Solving real-world problems with practical, elegant code. I thrive on building scalable solutions that are both functional and forward-thinking.</p>
+          </div>
+          <div class="f3">
+              <h2>About Me</h2>
+              <p>I am a software engineer passionate about creating meaningful digital experiences—from backend logic to polished interfaces. I value curiosity, clarity, and clean code.</p>
+          </div>
+      </div>
+      <div class="f5">
+          <h1>Programming Languages</h1>
+          <p>Proficient in Python, JavaScript, SQL, C, and Java/Kotlin. Experienced in full-stack development, API integration, and building robust systems for real business needs.</p>
+      </div>
+      <div class="right-stack">
+          <div class="f2">
+              <h2>Experience</h2>
+              <p>Hands-on development of POS systems, online marketplaces, and mobile-friendly apps. Skilled in identifying user pain-points and delivering polished, scalable software.</p>
+          </div>
+          <div class="f4">
+              <h2>Awards</h2>
+              <p>Golden Key International Honour Society | Eduvos Top Achiever Award — recognition for academic excellence in Software Engineering.</p>
+          </div>
+      </div>
+  </div>
+  <div class="contact-form-container" id="contact">
+    <div class="get-in-touch">
+        <h2>Get in touch</h2>
+        <form action="#" method="post">
+            <input class="input-field" type="text" name="name" placeholder="Name">
+            <input class="input-field" type="email" name="email" placeholder="Email">
+            <input class="input-field" type="text" name="subject" placeholder="Subject">
+            <textarea class="input-field textarea" name="message" placeholder="Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <div class="contact-details">
+        <h2>Contact us</h2>
+        <p><span class="icon">&#128204;</span> Address: NorthOaks, Houtbay, South Africa</p>
+        <p><span class="icon">&#128222;</span> Phone: 063 053 7197</p>
+        <p><span class="icon">&#9993;</span> Email: nathan123dejager@gmail.com</p>
+        <p><span class="icon">&#128279;</span> Website: site.com</p>
+    </div>
+</div>
+</body>
+    <div class="links_container">
+        <ul class="links">
+            <li>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook"></i>
+              </a>
+              </li>
+            <li>
+              <a href="https://www.linkedin.com/in/nathan-de-jager-34195b236/">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a> 
+            </li>
+          </ul>
+    </div>
+    <footer>
+        <p>Copyright © 2024 by Nathan De Jager</p>
+        <script src="main.js"></script>
+    </footer>
+</body>
+</html>
