@@ -46,6 +46,7 @@
 				text-align: center;
 				margin-left: 1vw;
 				margin-right: 2vw;
+				
 			}
 			.typing-demo {
 				height: auto;
@@ -90,14 +91,14 @@
 			  }
 			  
 			  .glow_card {
-				margin-top: 10vh;
+			
 				background: #0c121f;
 				width: var(--card-width);
 				height: var(--card-height);
 				padding: 3px;
-				position: absolute;
+				position: relative;
 				align-self: center;
-				margin-left: 7%;
+				margin: auto;
 				border-radius: 6px;
 				justify-content: center;
 				align-items: center;
