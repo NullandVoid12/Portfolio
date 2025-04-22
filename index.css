@@ -58,7 +58,7 @@
 				font-size: 4vw;
 			}
 			.landing_text {
-				height: 80vh;
+				height: 100vw;
 			}
 			.logo {
 				width: 6vw;
@@ -78,6 +78,37 @@
 				color: white;
 				font-size: 3vw;
 			  }
+
+			  .glow_card body {
+				min-height: 80vh;
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				padding-top: 2rem;
+				padding-bottom: 2rem;
+				box-sizing: border-box;
+			  }
+			  
+			  .glow_card {
+				margin-top: 10vh;
+				background: #0c121f;
+				width: var(--card-width);
+				height: var(--card-height);
+				padding: 3px;
+				position: absolute;
+				align-self: center;
+				margin-left: 7%;
+				border-radius: 6px;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				display: flex;
+				font-size: 1.5em;
+				color: rgb(88 199 250 / 100%)
+				cursor;
+				font-family: 'Exo 2', sans-serif;
+			  }
+			
 						}
 						}
 
@@ -788,7 +819,7 @@ button {
   
   .service_container .service_card .face.face2{
 	 position: relative;
-	 background: whitesmoke;
+	 background: rgb(99, 115, 129);
 	 display: flex;
 	 align-items: center;
 	 justify-content: center;
@@ -957,14 +988,13 @@ button {
   }
   
   .glow_card {
-	margin-top: 30vh;
+	margin: 30vh auto 0 auto;
 	background: #0c121f;
 	width: var(--card-width);
 	height: var(--card-height);
 	padding: 3px;
-	position: absolute;
+	position: relative;
 	align-self: center;
-	margin-left: 7%;
 	border-radius: 6px;
 	justify-content: center;
 	align-items: center;
