@@ -226,6 +226,25 @@ button.nav_btn::after {
 	.nav-overlay .closebtn {
 	  font-size: 40px;
 	}
+
+  .logo {
+		width: 6vw;
+		height: 6vw;
+		margin-right: 10px;
+	}
+	.logo_container {
+		display: flex;
+		align-items: center;
+		padding-top: 15px;
+		padding-left: 6vw;
+	  }
+	
+	.logo_container p {
+		align-items: flex-start;
+		font-family: 'Exo 2', sans-serif;
+		color: white;
+		font-size: 3vw;
+	  }
   }
 
 
