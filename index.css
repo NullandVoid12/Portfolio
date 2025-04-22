@@ -31,7 +31,7 @@
 			}
 			.typing_wrapper {
 				top: 35%;
-				margin-top: 45vw; /* Or 20vh, adjust as needed */
+				margin-top: 50vw; /* Or 20vh, adjust as needed */
 				display: grid;
 				align-items: center;
 				align-items: top;
@@ -46,10 +46,9 @@
 				text-align: center;
 				margin-left: 1vw;
 				margin-right: 2vw;
-				margin-bottom: ;
 			}
 			.typing-demo {
-				padding-top: 4vw;
+				height: auto;
 				width: 8.5ch;
 				animation: typing 2s steps(22), blink .5s step-end infinite alternate;
 				white-space: nowrap;
@@ -341,7 +340,7 @@ main {
 .intro{
 	font-family: 'Exo 2', sans-serif;
 	margin-left: auto;
-	margin-top: 60vh;
+	margin-top: 75vh;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
